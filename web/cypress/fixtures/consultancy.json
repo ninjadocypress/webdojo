@@ -1,0 +1,44 @@
+{
+    "personal": {
+        "name": "Daniel Araújo Berriel",
+        "email": "daniboy@test.com.br",
+        "phone": "21 99999-1000",
+        "consultanceType": "Individual",
+        "personType": "cpf",
+        "document": "70521312000",
+        "discoveryChannels": [
+            "Instagram",
+            "LinkedIn",
+            "Udemy",
+            "YouTube",
+            "Indicação de Amigo"
+        ],
+        "file": "./cypress/fixtures/document.pdf",
+        "description": "Vestibulum et finibus elit.",
+        "techs": [
+            "Cypress",
+            "Selenium",
+            "WebDriverIO",
+            "Playwright",
+            "Robot Framework"
+        ],
+        "terms": true
+    },
+    "company": {
+        "name": "Daniel Araújo Berriel",
+        "email": "daniboy@test.com.br",
+        "phone": "21 99999-1000",
+        "consultanceType": "In Company",
+        "personType": "cnpj",
+        "document": "35016746000178",
+        "discoveryChannels": [
+            "LinkedIn"
+        ],
+        "file": "./cypress/fixtures/document.pdf",
+        "description": "Vestibulum et finibus elit.",
+        "techs": [
+            "Cypress"
+        ],
+        "terms": true
+    }
+}
