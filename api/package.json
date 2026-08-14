@@ -6,21 +6,27 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "postinstall": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/adapter-pg": "^7.9.1",
-    "@prisma/client": "^7.9.1",
-    "cors": "^2.8.6",
+    "@prisma/client": "^6.11.1",
+    "cors": "^2.8.5",
+    "cypress-plugin-api": "^1.8.0",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "pg": "^8.23.0"
+    "express": "^5.1.0",
+    "pg": "^8.13.0",
+    "pg-promise": "^10.15.4"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^14.3.1",
     "nodemon": "^3.1.14",
-    "prisma": "^7.9.1"
+    "prisma": "^6.11.1"
   }
 }

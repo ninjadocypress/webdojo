@@ -1,17 +1,17 @@
 info:
-  name: Create new user
+  name: Update a user
   type: http
-  seq: 2
+  seq: 4
 
 http:
-  method: POST
-  url: http://localhost:3333/api/users/register
+  method: PUT
+  url: http://localhost:3333/api/users/1000
   body:
     type: json
     data: |-
       {
-        "name": "teste1",
-        "email": "teste1@teste.com.br",
+        "name": "miranha",
+        "email": "plankton@teste.com.br",
         "password": "password123"
       }
   auth: inherit
