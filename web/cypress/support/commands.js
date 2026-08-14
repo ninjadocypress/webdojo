@@ -26,10 +26,17 @@
 
 import 'cypress-real-events'
 import './actions/consultancy.actions.js'
-import {getCurrentDate} from './utils.js'
+import { getCurrentDate } from './utils.js'
 
 Cypress.Commands.add('start', () => {
     cy.visit('/')
+})
+
+Cypress.Commands.add('goToSignup', () => {
+    cy.start()
+    cy.get('a[href="/register"]').click()
+    cy.contains('h2', 'Crie sua conta')
+        .should('be.visible')
 })
 
 Cypress.Commands.add('submitLoginForm', (email, senha) => {
