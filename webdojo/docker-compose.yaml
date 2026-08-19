@@ -1,0 +1,39 @@
+# Feito com Muito S2 e Muito Café :)
+
+services:
+  # Serviço de banco de dados PostgreSQL
+  db:
+    container_name: dojo-db
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=dba                 # Usuário do banco de dados
+      - POSTGRES_PASSWORD=dba             # Senha do banco de dados
+      - POSTGRES_DB=UserDB                # Nome do banco de dados a ser criado
+      - POSTGRES_ROOT_PASSWORD=dba        # Senha do superusuário
+      - TZ=America/Sao_Paulo              # Fuso horário
+    ports:
+      - "5432:5432"                       # Mapeamento da porta do banco de dados
+    restart: always                       # Reinicia o serviço automaticamente se falhar
+    networks:
+      - skynet                             # Conecta à rede 'skynet'
+
+  # Serviço do PgAdmin para gerenciamento do PostgreSQL
+  pgadmin:
+    container_name: dojo-dbadm
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=dba@pgadmin.com    # E-mail padrão para login
+      - PGADMIN_DEFAULT_PASSWORD=dba             # Senha padrão para login
+      - TZ=America/Sao_Paulo                     # Fuso horário
+    ports:
+      - "15432:80"                              # Mapeamento da porta do PgAdmin
+    depends_on:
+      - db                                       # Depende do serviço 'db' (PostgreSQL)
+    restart: always
+    networks:
+      - skynet
+
+# Redes
+networks:
+  skynet:
+    driver: bridge               # Configuração da rede bridge

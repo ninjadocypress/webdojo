@@ -1,39 +1,36 @@
-# 🥋 WebDojo
+# 🧪 Webdojo — Projeto de Testes Automatizados com Cypress
 
-![WebDojo Cover](.github/cover.png)
+## 📋 Sobre o projeto
 
-## 🚀 Sobre o Projeto
+Este projeto contém uma suíte de **testes automatizados E2E (End-to-End)** desenvolvida com **Cypress** para validar os principais fluxos da aplicação **Webdojo**.
 
-O **WebDojo** é um aplicativo exclusivo para os alunos do **Curso Ninja do Cypress**, ministrado pelo mestre **Fernando Papito**! 🥷💻 Ele foi criado para ser um **campo de treinamento prático**, onde os alunos podem aprimorar suas habilidades em automação de testes com desafios e exercícios focados no **Cypress**.
+A aplicação Webdojo e os testes automatizados estão no **mesmo repositório**.
 
-🛠️ Tecnologias Utilizadas
+Para que os testes possam ser executados corretamente, a aplicação Webdojo precisa estar em execução localmente antes da execução do Cypress.
 
-- [x] Git & GitHub 🌍 (Controle de versão e repositório remoto)
-- [x] Bash (Linha de Comando) 💻 (Execução de scripts e comandos)
-- [x] Visual Studio Code 🖥️ (Editor de código recomendado)
-- [x] Node.js (22+) 🟢 (Runtime JavaScript)
-- [x] Gerenciador de pacotes (npm ou yarn) 📦 (Dependências do projeto)
-- [x] Cypress 🧪 (Framework de testes end-to-end)
-- [x] Docker & Docker Compose 🐳 (Ambiente isolado para execução)
-- [x] PostgreSQL 🗄 (Banco de dados relacional)
-- [x] Use Bruno 🔌 (Cliente de API para testes de requisições)
+Para consultar as instruções específicas da aplicação Webdojo, acesse o [README da aplicação](webdojo/web/README.md).
 
-## 📖 Como Usar
+---
 
-As instruções detalhadas de instalação e uso do **WebDojo** estão disponíveis dentro do **Curso Ninja do Cypress**.
+## 🎯 Objetivo
 
-🔗 **Acesse o curso e seja Ninja da Automação em Cypress!** 👉 [ninjadocypress.com.br](https://ninjadocypress.com.br)
+O objetivo do projeto é automatizar cenários de testes da aplicação Webdojo, garantindo que os principais fluxos funcionem conforme o comportamento esperado.
 
-## ⚠️ Contribuição
+A automação busca:
 
-O **WebDojo** é um ambiente **exclusivo** para os alunos do **Curso Ninja do Cypress**, e por isso, **não aceita contribuições externas**.
+* Validar funcionalidades críticas da aplicação;
+* Identificar regressões;
+* Reduzir o esforço de testes manuais;
+* Aumentar a confiabilidade das entregas;
+* Permitir a execução repetitiva e consistente dos cenários;
+* Servir como prática de automação de testes E2E com Cypress.
 
-📢 Para suporte e dúvidas, utilize os canais oficiais do curso!
+---
 
-## 🔒 Licença
+## 🛠️ Tecnologias utilizadas
 
-Este projeto é **exclusivo para alunos** do **Curso Ninja do Cypress**. 🚫 O compartilhamento ou distribuição sem autorização é proibido.
-
-------
-
-💙 Feito com dedicação e muito café por **Fernando Papito** e a equipe do **Curso Ninja do Cypress**. 🚀🔥
+* **Cypress** — automação de testes E2E
+* **JavaScript** — linguagem utilizada nos testes
+* **Node.js** — ambiente de execução
+* **npm** — gerenciamento de dependências e scripts
+* **Git / GitHub** — versionamento do projeto
