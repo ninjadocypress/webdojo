@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "serve -s dist -p 3000"
+    "dev": "serve -s dist -p 3000",
+    "test": "npx cypress run --config viewportWidth=1440,viewportHeight=900",
+    "test:ui": "npx cypress open",
+    "test:login": "npx cypress run --spec 'cypress/e2e/login.cy.js' --config viewportWidth=1440,viewportHeight=900"
+    
   },
   "dependencies": {
     "cypress-real-events": "^1.15.0",
