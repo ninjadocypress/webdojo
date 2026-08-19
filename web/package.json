@@ -3,10 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "serve -s dist -p 3000"
+    "dev": "serve -s dist -p 3000",
+    "test": "npx cypress run",
+    "test:ui": "npx cypress open",
+    "test:login": "npx cypress run --spec cypress/e2e/login.cy.js --config viewportWidth=1440,viewportHeight=900",
+    "test:login:mobile": "npx cypress run --spec cypress/e2e/login.cy.js --config viewportWidth=414,viewportHeight=896",
+    "test:login:ui": "npx cypress open --spec cypress/e2e/login.cy.js",
+    "test:consultancy": "npx cypress run --spec cypress/e2e/consultancy.cy.js",
+    "test:consultancy:ui": "npx cypress open --spec cypress/e2e/consultancy.cy.js"
   },
   "dependencies": {
+    "cypress-real-events": "^1.15.0",
+    "pdf-parse": "^2.4.5",
     "serve": "^14.2.4"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^14.3.3"
+  }
 }

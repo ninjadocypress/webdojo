@@ -1,0 +1,44 @@
+{
+  "personal": {
+    "name": "Fernando Papito",
+    "email": "papito@webdojo.com",
+    "phone": "11 99999-1000",
+    "consultancyType": "Individual",
+    "persontype": "cpf",
+    "document": "31045250058",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn",
+      "Udemy",
+      "YouTube",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/teste123.pdf",
+    "description": "Preciso de uma consultoria para aprender Cypress",
+    "technologies": [
+      "Cypress",
+      "Playwright",
+      "TestCafe",
+      "Puppeteer"
+    ],
+    "terms": true
+  },
+  "company": {
+    "name": "Fernando Papito",
+    "email": "papito@webdojo.com",
+    "phone": "11 99999-1000",
+    "consultancyType": "In Company",
+    "persontype": "cnpj",
+    "document": "33810761000168",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn"
+    ],
+    "file": "./cypress/fixtures/teste123.pdf",
+    "description": "Preciso de uma consultoria para aprender Cypress",
+    "technologies": [
+      "Cypress"
+    ],
+    "terms": true
+  }
+}
