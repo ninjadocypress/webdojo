@@ -1,0 +1,43 @@
+{
+  "personal": {
+    "name": "Débora Barbosa",
+    "email": "deborabarbosapinheiro5@gmail.com",
+    "phone": "(85) 99793-1499",
+    "consultancyType": "Individual",
+    "personType": "cpf",
+    "document": "61315871327",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn",
+      "Udemy",
+      "YouTube",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/document.pdf",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "techs": [
+      "Cypress",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "termsAccepted": true
+  },
+  "company": {
+    "name": "Débora Barbosa",
+    "email": "deborabarbosapinheiro5@gmail.com",
+    "phone": "(85) 99793-1499",
+    "consultancyType": "In Company",
+    "personType": "cnpj",
+    "document": "60474620000194",
+    "discoveryChannels": [
+      "LinkedIn"
+    ],
+    "file": "./cypress/fixtures/document.pdf",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "techs": [
+      "Cypress"
+    ],
+    "termsAccepted": true
+  }
+}

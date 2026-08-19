@@ -4,6 +4,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+cypress/videos
+cypress/screenshots
+cypress/downloads
+
 
 # Acdc
 yarn.lock
